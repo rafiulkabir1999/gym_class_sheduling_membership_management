@@ -2,6 +2,7 @@ import { Request, Response, NextFunction } from "express";
 import * as authService from "./auth.service";
 
 export async function register(req: Request, res: Response, next: NextFunction) {
+  // return req;
   try {
     const { email, password, name } = req.body;
     if (!email || !password || !name) {

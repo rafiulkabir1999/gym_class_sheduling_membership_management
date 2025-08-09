@@ -19,6 +19,7 @@ app.use("/api/users", userRoutes);
 app.use("/api/schedules", scheduleRoutes);
 app.use("/api/bookings", bookingRoutes);
 
+
 // Global error handler
 app.use(errorHandler);
 
